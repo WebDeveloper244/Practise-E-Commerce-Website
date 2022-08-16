@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonDataService } from 'src/app/shared-portal/JsonService/json-data.service';
+import { MessangerService } from 'src/app/shared-portal/rxjs-messanger/messanger.service';
+import { SavingDataServiceService } from 'src/app/shared-portal/volatile-service/saving-data-service.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,9 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private JsonService:JsonDataService,
-    private Router : Router
+    private Router : Router,
+    private messanger : MessangerService,
+    private volatileService :SavingDataServiceService
   ) { 
   this.getDataFromservice();
   }
@@ -30,8 +34,8 @@ export class HomeComponent implements OnInit {
   goToCartPage(Id:any){
    
  
-    // this.nonvolatile.setDataTolocalStorage(Id)
-    // this._messanger.sendMessageFromMyData(Id)
+    this.volatileService.saveDataToLocalStorage(Id)
+    this.messanger.sendMessageFromMyData(Id)
     this.Router.navigate(['cart']);
    
    
