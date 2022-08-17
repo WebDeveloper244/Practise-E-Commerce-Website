@@ -10,6 +10,7 @@ import { AboutComponent } from './main-portal/about/about.component';
 import { ContactComponent } from './main-portal/contact/contact.component';
 import { ProductComponent } from './main-portal/product/product.component';
 import { CartComponent } from './main-portal/cart/cart.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,15 @@ import { CartComponent } from './main-portal/cart/cart.component';
     AboutComponent,
     ContactComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

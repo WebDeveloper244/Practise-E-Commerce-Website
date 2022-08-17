@@ -5,6 +5,7 @@ import { CartComponent } from './main-portal/cart/cart.component';
 import { ContactComponent } from './main-portal/contact/contact.component';
 import { HomeComponent } from './main-portal/home/home.component';
 import { ProductComponent } from './main-portal/product/product.component';
+import { UserLoginComponent } from './ManagementPortal/UserManagement/UserLogin/user-login/user-login.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path:"about",
     component:AboutComponent
+  },
+  {
+    path:"user-login",
+    component:UserLoginComponent
   },
 ];
 
