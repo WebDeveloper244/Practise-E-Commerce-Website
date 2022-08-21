@@ -9,10 +9,11 @@ import { FormBuilder, FormGroup, Validators,  } from '@angular/forms';
 export class UserLoginComponent implements OnInit {
 
 
-myLoginForm:any |FormGroup;
+ myLoginForm:any |FormGroup;
 
-  constructor(private formBuilder:FormBuilder) { 
-    this.myForm()
+  constructor(
+    private formBuilder:FormBuilder) { 
+    this.myForm();
   }
 
   ngOnInit(): void {
@@ -24,7 +25,9 @@ myForm(){
   })
 }
 SubmitForm(){
-
+  let FormValue = this.myLoginForm.value
+  console.log(FormValue);
+  
 }
 }
 

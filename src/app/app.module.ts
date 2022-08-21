@@ -12,6 +12,7 @@ import { ProductComponent } from './main-portal/product/product.component';
 import { CartComponent } from './main-portal/cart/cart.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
