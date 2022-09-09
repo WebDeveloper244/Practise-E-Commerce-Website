@@ -3,7 +3,7 @@
         <div class="col-md-4">
             <h1 class="text-primary productHeading">Name: {{FilteredObject[0].Name}}</h1>
                 <h3 >Quantity: {{FilteredObject[0].qty}}</h3>
-            <img *ngFor="let item of FilteredObject[0].image" [src]="item" alt="" srcset="">
+            <img *ngFor="let item of FilteredObject[0].image" [src]="item">
         </div>
        
         <div class="col-md-5">
