@@ -14,7 +14,6 @@ export class CartComponent implements OnInit {
   clickCardObject:any;
   FilteredObject:any=[]
   quantity:any=0;
-  //totalQuantity:any=0;
   productQuantity:any;
   showBox: boolean = false;
   CartArray:any=[];  //save Data
