@@ -115,8 +115,8 @@ SubtractQuantity(){
 
   CartObjectPlus.map((element:any) => {
     if(this.FilteredObject[0].id === element.id){
-      element.newQuantity--;
-      this.selectedQuantity--;
+      element.newQuantity--
+      this.selectedQuantity--
 }
 
 })
